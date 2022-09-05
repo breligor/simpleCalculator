@@ -1,1 +1,1 @@
-# Task3_Brel_Igor
+# simple calculator
