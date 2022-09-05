@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    max-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calc {
+    width: 650px;
+    margin: 50px auto;
+    border:  solid 2px gray;
+    border-radius: 5px;
+    background-color: #eeeeee;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 160px;
+    box-shadow: 3px 3px 30px rgb(0,0,0, 0.4);
+}
+.display {
+    grid-column: 1/-1;
+    background-color: #858585;
+    color: #eeeeee;
+    font-size: 76px;
+    padding: 20px;
+    display: flex;
+    justify-content: left;
+    align-items: end;
+    overflow: hidden;
+}
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFDDD6;
+    cursor: pointer;
+    font-size: 45px;
+    border: 1px solid rgb(0,0,0, 0.4);
+}
+.btn:hover {
+    opacity: 0.9;
+    background-color: #e1bfb8;
+    color: red;
+}
+.clear {
+    grid-column: 1/-3;
+    background: linear-gradient(180deg, #c3a5a0, #DBDBDB);
+    color: #ff3f38;
+}
+.null {
+    grid-column: 1/-3;
+}
+.oper, .equal {
+    background-color: #a5a5a5;
+    font-size: 45px;
+    color: white;
+}
+.oper:hover {
+    opacity: 0.9;
+    background-color: #747474;
+ }
+.equal:hover {
+    opacity: 0.9;
+    background-color: #747474;
+}
